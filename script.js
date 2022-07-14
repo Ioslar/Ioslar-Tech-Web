@@ -11,7 +11,7 @@ window.addEventListener("resize", ()=>{
    })
 
 button.addEventListener("click", ()=>{
-    window.location.href = "file:///C:/Users/HP%20Prodesk%20600%20g2/Desktop/Desarrollo%20Web/Portafolio%20Desarrollo%20Web/3-Portafolio%20Ioslar%20Dev/Portfolio%20Page/portfolio.html";
+    window.location.href = "https://ioslar.github.io/Ioslar-Tech-Web/Portfolio%20Page/portfolio.html";
 })
 
 
