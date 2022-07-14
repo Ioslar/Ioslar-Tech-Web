@@ -1,0 +1,230 @@
+/*
+COLORES
+
+Azul Oscuro: #142157
+Cian: #0cbccc
+Azul Claro: #1B2C9F
+Negro: #222222
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    background-color: #222222;
+    font-size: calc(0.5vw + 7px);    
+}
+
+header{
+    color: #0cbccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+   
+}
+
+.header-logo{
+    margin: 2vw 4vw;
+    font-size: calc(0.4vw + 14px); 
+}
+
+.header-sections{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4vw;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-sections a, .header-title{
+    font-size: calc(0.4vw + 14px);
+    text-decoration: none;
+    color: #0cbccc;
+    
+    padding: 0.15vw 0.35vw;
+}
+
+.header-sections a:hover, .header-title:hover{
+    
+    text-shadow: 0px 0px 2.5px #0cbccc;
+    color: #ffffff00;
+    font-size: calc(0.55vw + 14px);;
+    transition: all 0.1s;
+}
+
+.portfolio-title{
+    color: #0cbccc;
+    font-size: 400%;
+    font-weight: 400;
+    margin: 5vw 0 2vw 10vw;
+}
+
+.grid{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20vw;
+}
+
+.grid div{
+    background-color: aquamarine;
+    width: 45%;
+    margin: 2vw 0;
+    text-align: center;
+    font-size: 1500%;
+    height: 320px;
+}
+
+@keyframes appearing{
+    from{
+        width: 0%;
+        height: 0%;
+        font-size: 0;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+        font-size: 12%;
+    }
+}
+
+@keyframes disappearing{
+    from{
+        width: 100%;
+        height: 100%;
+        font-size: 12%;
+    }
+    to{
+        width: 0%;
+        height: 0%;
+        font-size: 0;
+    }
+}
+
+@keyframes unhide {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.web-1{
+    background-image: url("../Imagenes/Foto\ Web\ 1\ \(Academia\ Shopping\).png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    animation: 2000ms unhide;
+    animation-timing-function: ease-in;
+}
+
+#web-1-hover{
+    width: 0%;
+    height: 0%;
+    font-size: 0;
+    color: transparent;
+    padding: 10% 0;
+    cursor: pointer;
+}
+
+.web-1:hover > #web-1-hover{
+    background-color: #142157b8;
+    margin: auto;
+    animation: 200ms appearing;
+    animation-fill-mode: forwards;
+    color: #ffffff;
+}
+
+.web-1:not(:hover) > #web-1-hover{
+    background-color: #142157b8;
+    margin: auto;
+    animation: 200ms disappearing;
+    animation-fill-mode: forwards;
+}
+
+
+
+.web-2{
+    background-image: url("../Imagenes/Foto\ Web\ 2\ \(Beauty\ Hands\).png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    animation: 2000ms unhide;
+    animation-timing-function: ease-in;
+}
+
+#web-2-hover{
+    width: 0%;
+    height: 0%;
+    font-size: 0;
+    color: transparent;
+    padding: 10% 0;
+    cursor: pointer;
+}
+
+.web-2:hover > #web-2-hover{
+    background-color: #142157b8;
+    margin: auto;
+    animation: 200ms appearing;
+    animation-fill-mode: forwards;
+    color: #ffffff;
+}
+
+.web-2:not(:hover) > #web-2-hover{
+    background-color: #142157b8;
+    margin: auto;
+    animation: 200ms disappearing;
+    animation-fill-mode: forwards;
+}
+
+.web-3{
+    background-image: url("../Imagenes/Foto\ Web\ 3\ \(Blog\ Psicologa\ María\ Adriana\).png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    animation: 2000ms unhide;
+    animation-timing-function: ease-in;
+}
+
+#web-3-hover{
+    width: 0%;
+    height: 0%;
+    font-size: 0;
+    color: transparent;
+    padding: 10% 0;
+    cursor: pointer;
+}
+
+.web-3:hover > #web-3-hover{
+    background-color: #142157b8;
+    margin: auto;
+    animation: 200ms appearing;
+    animation-fill-mode: forwards;
+    color: #ffffff;
+}
+
+.web-3:not(:hover) > #web-3-hover{
+    background-color: #142157b8;
+    margin: auto;
+    animation: 200ms disappearing;
+    animation-fill-mode: forwards;
+}
+
+
+@media(max-width:800px){
+    .grid div{
+        width: 80%;
+    }
+}
